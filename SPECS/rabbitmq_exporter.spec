@@ -28,7 +28,7 @@ Prometheus exporter for rabbitmq.
 %prep
 mkdir _build
 export GOPATH=$(pwd)/_build
-git clone https://github.com/prometheus/%{name} $GOPATH/%{_git_slug}
+git clone %{_git_url} $GOPATH/%{_git_slug}
 cd $GOPATH/%{_git_slug}
 git checkout v%{version}
 
